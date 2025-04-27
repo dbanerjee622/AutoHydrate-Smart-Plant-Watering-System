@@ -29,7 +29,7 @@ This system is helpful to water 4-5 indoor (or even outdoor) plants/vases during
 ## Hardware/Wires
 This is a work in progress. I will make sure to come back and update this step.
 ## Important Notes
-1. **Make sure the sensor is in the soil**, otherwise the system will not moisturize the plant.
+1. **Make sure the sensor is in the soil**, otherwise the system will not be able to moisturize the plant.
 2. You will also need to place the water pump inside a big gallon or jug of **clean, accessible** water.
 ## Credits/Incentives
 I decided to assemble this system in order to help my mother's plants stay moisturized while my family is out of town and unable to water them. I believe this project will help us worry less about the plants dying or becoming dry, and we will not have to rely on others to water the plants for us.
