@@ -27,30 +27,15 @@ This system is helpful to water 4-5 indoor (or even outdoor) plants/vases during
 7. **Choose a file location** (This is VERY IMPORTANT. Make sure you know where the file is and you have access to it at ALL TIMES. YOU WILL NEED IT)
 8. Begin programming (all the code is listed in the files above)
 9. Once programming is complete, connect the Arduino board to the computer for it to process the code (use the BLUE wire and connect one end to the Arduino inserter and one to the computer
-## Hardware/Wires
-1. Connect the sensor to the Arduino board
-2. Connect the Arduino board to the compuer with the big, blue wire, in order for it to process the code
-3. Test to make sure it works
-   a. On the VSCode go to PlatformIo > Project Tasks > Upload and Monitor, and wait for it to approve. After this, it should start displaying the value (moisture level) of the sensor
-   b. Dip the sensor in and out of the water. When the sensor is in the water, the value should be low, and when out of the water, it should be higher. Keep dipping and taking out the sensor until this is confirmed
-4. Begin connecting parts of the Arduino board to the relay module (see my images in the other files for real visuals)
-5. Then begin connecting parts of the relay module to the breadboard (you will need a mini screwdriver for parts of the relay module to be screwed in)
-6. Put all the wires into the correct parts of the breadboard (once again, visuals are above)
-7. Connect parts of the breadboard to the battery holder (make sure there are AA bateries facing the right way)
-8. Connect parts of the breadboard to the water pump
-9. Once done, insert the tube into the pump and the system should be assembled **for one sensor**
-10. Turn the battery switch on, make sure the Arduino board is plugged in somewhere, and make sure the pump is in water
-11. **Please make sure** the water that comes out of the tube goes in a secure place. Otherwise, the water will come out of the tube and spill/leak
-12. When the sensor is dry, water should be coming from the pump through the tube
-13. Your system should now be complete
+10. Attach sensors to the Arduino and test to make sure it works (visuals are in the section below)
+## Hardware/Wires (WORK IN PROGRESS)
+1. Connect the sensors to the Arduino (you will need a breadboard)
+![Sensors' connection](https://github.com/user-attachments/assets/ed1a2002-4c31-45a0-b06c-11bdd0c70b41)
+![Sensors' connection (pt  2)](https://github.com/user-attachments/assets/ab3a1144-876d-4214-b54b-9be3f3cab52e)
+![Arduino Board closeup](https://github.com/user-attachments/assets/80d16b49-a13d-4681-8c27-c4cf55805481)
+![Breadboard closeup](https://github.com/user-attachments/assets/323dfb34-1ec0-415a-a330-f9752a92becc)
+![Breadboard from the side](https://github.com/user-attachments/assets/1187e2b9-f201-42fa-a2ba-17457b6e1d45)
 
-**ALL VISIUALS/IMAGES ARE IN FILES ABOVE**
-
-Now you will have to just connect four sensors to the Arduino board and the system will be set up
-
-**THIS IS JUST TESTING AND MAKING THE SYSTEM**. When finished, put the sensors in the plants' soil, the water pump inside a big jug of **safe, clean water**, and put the tube back into the soil to water the plants
-
-Congratulations! Your system is now complete.
 ## Important Notes
 1. **Make sure the sensor is in the soil**, otherwise the system will not be able to moisturize the plant.
 2. You will also need to place the water pump inside a big gallon or jug of **clean, accessible** water.
