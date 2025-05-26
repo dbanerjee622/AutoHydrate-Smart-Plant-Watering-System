@@ -2,7 +2,6 @@
   This is an extremely popular DIY project that allows you to automatically water your plants according to the level of moisture in the soil
   @author MecaHumArduino
   @version 3.0
-  **THIS IS STILL A WORK IN PROGRESS. AS OF NOW, THIS ONLY WORKS FOR ONE SENSOR/PLANT. I WILL MAKE SURE TO UPDATE IT AND KEEP EVERYONE POSTED**
 */
 
 #include <Arduino.h>
@@ -23,21 +22,36 @@ void loop();
 // **************
 
 int IN1 = 2;
+int IN2 = 3;
+int IN3 = 4;
+int IN4 = 5;
 
 int Pin1 = A0;
+int Pin2 = A1;
+int Pin3 = A2;
+int Pin4 = A3;
 
 float sensor1Value = 0;
+float sensor2Value = 0;
+float sensor3Value = 0;
+float sensor4Value = 0;
 
 /**
  * Build and return a JSON document from the sensor data
  * @param sensor1Value
+ * @param sensor2Value
+ * @param sensor3Value
+ * @param sensor4Value
  * @return
  */
-String prepareDataForWiFi(float sensor1Value)
+String prepareDataForWiFi(float sensor1Value, float sensor2Value, float sensor3Value, float sensor4Value)
 {
   StaticJsonDocument<200> doc;
 
   doc["sensor1Value"] = String(sensor1Value);
+  doc["sensor2Value"] = String(sensor2Value);
+  doc["sensor3Value"] = String(sensor3Value);
+  doc["sensor4Value"] = String(sensor4Value);
 
   char jsonBuffer[512];
   serializeJson(doc, jsonBuffer);
@@ -79,10 +93,19 @@ void setup() {
   Serial.begin(9600);
 
   pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
 
   pinMode(Pin1, INPUT);
+  pinMode(Pin2, INPUT);
+  pinMode(Pin3, INPUT);
+  pinMode(Pin4, INPUT);
 
   digitalWrite(IN1, HIGH);
+  digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, HIGH);
 
   delay(500);
 }
@@ -107,17 +130,47 @@ void loop() {
     Serial.println(" endbuffer");
   }
 
-  Serial.print("Plant 1 - Moisture Level:");
+   Serial.print("Plant 1 - Moisture Level:");
   sensor1Value = analogRead(Pin1);
   Serial.println(sensor1Value);
 
-  if (sensor1Value > 500) {
+  if (sensor1Value > 525) {
     digitalWrite(IN1, LOW);
   } else {
     digitalWrite(IN1, HIGH);
   }
 
-  String preparedData = prepareDataForWiFi(sensor1Value);
+  Serial.print("Plant 2 - Moisture Level:");
+  sensor2Value = analogRead(Pin2);
+  Serial.println(sensor2Value);
+
+  if (sensor2Value > 500) {
+    digitalWrite(IN2, LOW);
+  } else {
+    digitalWrite(IN2, HIGH);
+  }
+
+  Serial.print("Plant 3 - Moisture Level:");
+  sensor3Value = analogRead(Pin3);
+  Serial.println(sensor3Value);
+
+  if (sensor3Value > 500) {
+    digitalWrite(IN3, LOW);
+  } else {
+    digitalWrite(IN3, HIGH);
+  }
+
+  Serial.print("Plant 4 - Moisture Level:");
+  sensor4Value = analogRead(Pin4);
+  Serial.println(sensor4Value);
+
+  if (sensor4Value > 500) {
+    digitalWrite(IN4, LOW);
+  } else {
+    digitalWrite(IN4, HIGH);
+  }
+
+  String preparedData = prepareDataForWiFi(sensor1Value, sensor2Value, sensor3Value, sensor4Value);
   if (DEBUG == true) {
     Serial.println(preparedData);
   }
