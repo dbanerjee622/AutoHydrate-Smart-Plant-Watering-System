@@ -28,14 +28,9 @@ This system is helpful to water 4-5 indoor (or even outdoor) plants/vases during
 8. Begin programming (all the code is listed in the files above)
 9. Once programming is complete, connect the Arduino board to the computer for it to process the code (use the BLUE wire and connect one end to the Arduino inserter and one to the computer
 10. Attach sensors to the Arduino and test to make sure it works (visuals are in the section below)
-## Hardware/Wires (WORK IN PROGRESS)
-1. Connect the sensors to the Arduino (you will need a breadboard)
-![Sensors' connection](https://github.com/user-attachments/assets/ed1a2002-4c31-45a0-b06c-11bdd0c70b41)
-![Sensors' connection (pt  2)](https://github.com/user-attachments/assets/ab3a1144-876d-4214-b54b-9be3f3cab52e)
-![Arduino Board closeup](https://github.com/user-attachments/assets/80d16b49-a13d-4681-8c27-c4cf55805481)
-![Breadboard closeup](https://github.com/user-attachments/assets/323dfb34-1ec0-415a-a330-f9752a92becc)
-![Breadboard from the side](https://github.com/user-attachments/assets/1187e2b9-f201-42fa-a2ba-17457b6e1d45)
-
+## Hardware/Wires
+Refer to the diagram below. **You will need a breadboard and know how to use it properly, as this step may vary.** Below is a general overview/outline of the completed product.
+![](https://photos.google.com/photo/AF1QipMpuW3vmxEFlzrLAlVjIv0rC8jIxLC38WDNQReE)
 ## Important Notes
 1. **Make sure the sensor is in the soil**, otherwise the system will not be able to moisturize the plant.
 2. You will also need to place the water pump inside a big gallon or jug of **clean, accessible** water.
