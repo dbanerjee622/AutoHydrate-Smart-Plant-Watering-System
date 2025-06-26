@@ -30,7 +30,10 @@ This system is helpful to water 4-5 indoor (or even outdoor) plants/vases during
 10. Attach sensors to the Arduino and test to make sure it works (visuals are in the section below)
 ## Hardware/Wires
 Refer to the diagram below. **You will need a breadboard and know how to use it properly, as this step may vary.** Below is a general overview/outline of the completed product.
-![](https://photos.google.com/photo/AF1QipMpuW3vmxEFlzrLAlVjIv0rC8jIxLC38WDNQReE)
+
+![Diagram Outline](https://i.imgur.com/QFwLVqN.png)
+
+Retrived from [Smart Things DIY](https://www.youtube.com/@smartthingsdiy)'s [video](https://www.youtube.com/watch?v=b5GgpAN53r4)
 ## Important Notes
 1. **Make sure the sensor is in the soil**, otherwise the system will not be able to moisturize the plant.
 2. You will also need to place the water pump inside a big gallon or jug of **clean, accessible** water.
